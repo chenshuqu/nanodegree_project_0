@@ -7,8 +7,6 @@ import android.view.View;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    String tag = "Lifecycle";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,11 +41,5 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(),"This button will lauch my GO UBIQUITOUS app.",Toast.LENGTH_SHORT).show();
                 break;
         }
-    }
-
-    public void onStart()
-    {
-        super.onStart();
-        Log.d(tag,"In the onStart() event");
     }
 }
